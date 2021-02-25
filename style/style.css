@@ -2478,6 +2478,113 @@ button {
     }
 }
 
+@media (max-width: 520px) {
+    .content_text-desc {
+        width: 400px;
+        position: relative;
+        right: 17%;
+    }
+    .content_text-title {
+        width: 450px;
+        font-size: 46px;
+        line-height: 50px;
+        position: relative;
+        right: 23%;
+    }
+    .mobile_navbar_logo {
+        right: 80px;
+    }
+    .for-who {
+        height: 1700px;
+    }
+    .mb_active {
+        height: 160vw;
+    }
+    .mobile__header_contacts {
+        right: 60%;
+    }
+    .header__phone {
+        margin-top: 75px;
+        margin-left: 18%;
+    }
+    .content__block_title {
+        font-size: 38px;
+        width: 400px;
+    }
+    .content__block_desc {
+        width: 385px;
+        font-size: 24px;
+    }
+    .for-who__desc {
+        margin-left: 19%;
+    }
+    .app__body_title {
+        font-size: 36px;
+    }
+    .app {
+        margin-top: 40px;
+        background-size: 410%;
+    }
+    .line__blue {
+        background-position: 0 28px;
+        font-size: 20px;
+    }
+    .tariff__price {
+        padding: 5px 20px 5px 20px;
+        font-size: 26px;
+    }
+    .app__reviews_body {
+        right: 23%;
+        top: 280px;
+    }
+    .tariff__body_title {
+        font-weight: bold;
+        font-size: 34px;
+        margin-bottom: 40px;
+        margin-top: 150px;
+    }
+    .tariff__title {
+        width: 350px;
+        font-size: 28px;
+    }
+    .tariff__body_card {
+        margin-left: 0%;
+        position: relative;
+        margin-top: -15%;
+    }
+    .tariff_cost {
+        width: 230px;
+    }
+    .tariff__body_left {
+        width: 48px;
+        height: 48px;
+    }
+    .tariff__body_right {
+        width: 48px;
+        height: 48px;
+    }
+    .tariff__body_controls {
+        position: relative;
+        top: 96%;
+        margin-left: 60%;
+        width: 30%;
+    }
+    .app_link_title {
+        font-size: 32px;
+        color: black;
+        font-weight: bold;
+    }
+    .app_link_links {
+        right: 5%;
+        position: relative;
+    }
+    .tariff__desc {
+        color: #574D60;
+        width: 350px;
+        font-size: 20px;
+    }
+}
+
 @media (max-width: 491px) {
     .mobile_navbar_logo {
         right: 80px;

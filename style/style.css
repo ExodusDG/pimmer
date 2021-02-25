@@ -2224,6 +2224,9 @@ button {
 }
 
 @media (max-width: 600px) {
+    .cookie_notify {
+        width: 380px;
+    }
     .tariff__price {
         padding: 5px 20px 5px 20px;
         font-size: 20px;
@@ -2820,6 +2823,9 @@ button {
 }
 
 @media (max-width: 415px) {
+    .cookie_notify {
+        width: 370px;
+    }
     .mobile_navbar_logo {
         right: 50px;
     }
@@ -2961,11 +2967,22 @@ button {
 }
 
 @media (max-width: 376px) {
+    .cookie_notify button {
+        position: relative;
+        right: 0%;
+    }
+    .cookie_notify p {
+        margin-top: 15px;
+        font-size: 14px;
+    }
     .mobile_navbar_logo {
         right: 35px;
     }
     .content_text-title {
         right: 18%;
+    }
+    .cookie_notify {
+        width: 330px;
     }
     .content_text-desc {
         width: 320px;
@@ -3030,6 +3047,13 @@ button {
 }
 
 @media (max-width: 361px) {
+    .cookie_notify {
+        width: 310px;
+    }
+    .cookie_notify p {
+        margin-top: 15px;
+        font-size: 13px;
+    }
     .header__phone {
         margin-top: 75px;
         margin-left: 20%;

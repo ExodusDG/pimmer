@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pimmer - главная страница</title>
+    <link rel="shortcut icon" href="image/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preload" as="font" href="/style/fonts/Circe-Bold.woff" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/style/fonts/Circe-Regular.woff" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <section class="header">
+            <div class="header__body">
+                <!-- DESKTOP NAVBAR -->
+                <nav>
+                    <ul class="header__navbar">
+                        <li style="display: flex;">
+                            <img src="image/logotype.svg" alt="logotype">
+                            <div class="header__lang_choise">
+                                <img src="image/ru_lang.svg" alt="">
+                                <p class="header__lang_choise_text">RUS <img src="image/down.svg" alt=""></p>
+                            </div>
+                            <!-- <div class="header_lang_choise">
+                                <p class="mobile__lang_choise_title">Выберите язык:</p>
+                                <div class="lang-list">
+                                    <div class="lang-list-item">
+                                        <p>English</p>
+                                    </div>
+                                    <div class="lang-list-item">
+                                        <p>Español</p>
+                                    </div>
+                                    <div class="lang-list-item">
+                                        <p>Français</p>
+                                    </div>
+                                    <div class="lang-list-item">
+                                        <p>Русский</p>
+                                    </div>
+                                    <div class="lang-list-item">
+                                        <p>Português</p>
+                                    </div>
+                                    <div class="lang-list-item">
+                                        <p>Bahasa Indonesia</p>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </li>
+                        <li>
+                            <div class="header__navbar_links">
+                                <a href="#content">Почему Pimmer </a>
+                                <a href="#app">Возможности</a>
+                                <a href="#reviews">Отзывы</a>
+                                <a href="#tariff">Тарифы</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="login.html"> <button class="main__button navbar__button">Войти</button></a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- MOBILE NAVBAR -->
+                <nav class="navbar__mobile">
+                    <ul class="mobile__navbar">
+                        <li>
+                            <img class="mobile_hamburger_inactive mobile_menu_show" src="image/hamburger_inactive.svg" alt="">
+                        </li>
+                        <li>
+                            <a href="/"> <img class="mobile_navbar_logo" src="image/logotype.svg" alt="logotype"></a>
+                        </li>
+                        <li>
+                            <a href="login.html"> <button class="main__button navbar__button">Войти</button></a>
+                        </li>
+                    </ul>
+                    <div class="mobile__menu mb_inactive">
+                        <div class="mobile__menu_body">
+                            <ul>
+                                <li>
+                                    <div class="mobile__menu_header">
+                                        <img class="mobile_menu_hide" src="image/hamburger_active.svg" alt="">
+                                        <img class="mobile_menu_logotype" src="image/logotype.svg" alt="">
+                                        <a href="login.html"> <button class="main__button navbar__button navbar_button_adaptive">Войти</button></a>
+                                        <hr class="mobile__menu_header_hr">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="header__navbar_links mobile__navbar_link" style="display: grid;">
+                                        <span> <a href="#content">Почему Pimmer </a></span>
+                                        <span><a href="#app">Возможности</a></span>
+                                        <span><a href="#reviews">Отзывы</a></span>
+                                        <span><a href="#tariff">Тарифы</a></span>
+                                        <hr class="mobile__menu_header_hr_2">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="mobile__header_footer">
+                                        <div class="mobile__lang_choise">
+                                            <p class="mobile__lang_choise">Следите за нами:</p>
+                                        </div>
+                                        <div class="mobile__header_contacts">
+                                            <a href="#"> <img src="image/facebook_black.svg" alt=""></a>
+                                            <a href="#"><img src="image/instagram_black.svg" alt=""></a>
+                                            <a href="#"><img src="image/youtube_black.svg" alt=""></a>
+
+                                        </div>
+                                        <hr class="mobile__menu_header_hr_3">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="mobile__lang_choise_1">
+                                        <p class="mobile__lang_choise_title">Выберите язык:</p>
+                                        <div class="lang-list">
+                                            <button>English</button>
+                                            <button>Español</button>
+                                            <button>Français</button>
+                                            <button>Русский</button>
+                                            <button>Português</button>
+                                            <button>Bahasa Indonesia</button>
+                                        </div>
+                                        <hr class="mobile__menu_header_hr_4">
+                                    </div>
+                                </li>
+                                <div class="mobiile_loc_choised">
+                                    <img class="mobile_loc_country" src="image/russia_logo.svg" alt="">
+                                    <p>Россия</p>
+                                    <img class="mobile_loc_arrow" src="image/down_black.svg" alt="">
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="header__content">
+                    <div class="header__content_text">
+                        <p class="content_text-title">Получайте заявки онлайн</p>
+                        <p class="content_text-desc">#nocode cоздайте <span style="border-bottom: 2px solid white; line-height: 0px;">бесплатно</span> приложение на iOS и Android для вашего бизнеса. App Clips и Instant Apps доступны мгновенно. Не разрабатывайте, а сразу продавайте!</p>
+                        <button class="content_button"> <span>Создать App Clip и Instant App</span> <img class="button__arrow" src="image/arrow.svg" alt="arrow"></button>
+                        <p class="header__content_review"><img src="image/reviews.svg" alt=""> 5 из 5 рейтинг в AppStore и Google Play</p>
+                    </div>
+                    <img class="header__phone" src="image/header_phone.png" alt="header_phone">
+                </div>
+        </section>
+        <!-- CONTENT -->
+        <section class="content" id="content">
+            <div class="content__body">
+                <div class="content__block">
+                    <p class="content__block_title">Хотите протестировать продажи новых товаров или запустить бизнес онлайн?</p>
+                    <div class="content__desc">
+                        <p class="content__block_desc">Это можно сделать за одну минуту. Приложение вашего магазина на iOS и Android готово к работе сразу после регистрации.</p>
+                        <a href="#"><span class="line__blue">Подробнее</span> <img src="image/arrow_black.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="for-who">
+                    <div class="for-who__cards">
+                        <div class="for-who__card">
+                            <p class="for-who__card_title">Для кого создан Pimmer?</p>
+                            <p class="for-who__card_desc">Решение используют:</p>
+                        </div>
+                        <div class="for-who__card">
+                            <img class="for__who_img" id="for_who_1" src="image/for_who_1.svg" alt="">
+                            <a href="#">
+                                <p class="for-who__desc"><span class="line__black">новое поколение</span> <img src="image/arrow_b.svg" alt=""></p>
+                            </a>
+                        </div>
+                        <div class="for-who__card">
+                            <img class="for__who_img" id="for_who_2" src="image/for_who_2.svg" alt="">
+                            <a href="#">
+                                <p class="for-who__desc"><span class="line__black">кафе и рестораны</span> <img src="image/arrow_b.svg" alt=""></p>
+                            </a>
+                        </div>
+                        <div class="for-who__card">
+                            <img class="for__who_img" id="for_who_3" src="image/for_who_3.svg" alt="">
+                            <a href="#">
+                                <p id="for_who_3_text" class="for-who__desc"><span class="line__black">организаторы мероприятий</span> <img src="image/arrow_b.svg" alt=""></p>
+                            </a>
+                        </div>
+                        <div class="for-who__card">
+                            <img class="for__who_img" id="for_who_4" src="image/for_who_4.svg" alt="">
+                            <a href="#">
+                                <p id="for_who_4_text" class="for-who__desc"><span class="line__black">розничные продавцы</span> <img src="image/arrow_b.svg" alt=""></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="offers">
+                    <div class="offers__body">
+                        <div class="offer">
+                            <img src="image/phone-1.png" alt="">
+                            <div class="offer__body_text">
+                                <p class="offer__body_title">У вас есть сайт, но хотите мобильное приложение?</p>
+                                <p class="offer__body_desc">App Clip и Instant App круче! Это нативные приложения, которые не нужно устанавливать из AppStore или Google Play. Их обязательно будут использовать.</p>
+                                <a href="#"><span class="line__blue">Подробнее</span> <img src="image/arrow_black.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="offer">
+                            <div class="offer__body_text">
+                                <p class="offer__body_title">Хотите улучшить метрики? Сфокусированы на продажах?</p>
+                                <p class="offer__body_desc">Интерфейс мобильного приложения имеет большую конверсию, чем мобильная версия сайта. Используйте мгновенную оплату через Apple Pay и Google Pay.</p>
+                                <a href="#"><span class="line__blue">Подробнее</span> <img src="image/arrow_black.svg" alt=""></a>
+                            </div>
+                            <img src="image/phone-1.png" alt="">
+                        </div>
+                        <div class="offer">
+                            <img src="image/phone-1.png" alt="">
+                            <div class="offer__body_text">
+                                <p class="offer__body_title">Нужна персонализация? Хотите большего?</p>
+                                <p class="offer__body_desc">Мы открыли исходный код приложения и API, они доступны для всех бесплатно. Легко создать свое приложение или маркетплейс, объединив разные бизнесы.</p>
+                                <a href="#"><span class="line__blue">Подробнее</span> <img src="image/arrow_black.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- APP -->
+        <section class="app" id="app">
+            <div class="app__body">
+                <p class="app__body_title">Возможности приложения</p>
+                <div class="app__content">
+                    <div class="app__content_buttons">
+                        <button id="data" class="main__button app__content_button app_button_active">DATA</button>
+                        <button id="pim" class="main__button app__content_button">PIM</button>
+                        <button id="pgi" class="main__button app__content_button">PGI</button>
+                        <button id="oms" class="main__button app__content_button">OMS</button>
+                        <button id="push" class="main__button app__content_button">PUSH</button>
+                        <button id="lang" class="main__button app__content_button">LANG</button>
+                        <button id="api" class="main__button app__content_button">API</button>
+                    </div>
+                    <!-- APP 1 -->
+                    <div id="app_1" class="app__1_content app__inactive app__active">
+                        <img src="image/app/app_1.png" alt="">
+                        <div class="app__body_text">
+                            <p class="app__body_text-title">Ваши данные и их полный контроль</p>
+                            <p class="app__body_text-desc">Используя Pimmer, вы развиваете продажи, контролируя и накапливая данные. Ваш бизнес растет и увеличивает независимость от агрегаторов и маркетплейсов на рынке.</p>
+                            <p class="app__body_text-desc">Система анализирует поведение клиентов, предугадывает их предпочтения, повышая конверсию и средний чек.</p>
+                        </div>
+                    </div>
+                    <!-- APP 2 -->
+                    <div id="app_2" class="app__1_content app__inactive">
+                        <img src="image/app/app_2.png" alt="">
+                        <div class="app__body_text">
+                            <p class="app__body_text-title">Облачная система управления продуктовой информацией</p>
+                            <ul>
+                                <li>
+                                    <p class="app__body_text-desc">Свойства</p>
+                                </li>
+                                <li>
+                                    <p class="app__body_text-desc">Категории</p>
+                                </li>
+                                <li>
+                                    <p class="app__body_text-desc">Фото и видео</p>
+                                </li>
+                                <li>
+                                    <p class="app__body_text-desc">Умный поиск</p>
+                                </li>
+                                <li>
+                                    <p class="app__body_text-desc">Рекомендательная система</p>
+                                </li>
+                                <li>
+                                    <p class="app__body_text-desc">Импорт: JSON и XML</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- APP 3 -->
+                    <div id="app_3" class="app__1_content app__inactive">
+                        <img src="image/app/app_3.png" alt="">
+                        <div class="app__body_text">
+                            <p class="app__body_text-title">Ваши данные и их полный контроль</p>
+                            <p class="app__body_text-desc">Используя Pimmer, вы развиваете продажи, контролируя и накапливая данные. Ваш бизнес растет и увеличивает независимость от агрегаторов и маркетплейсов на рынке.</p>
+                            <p class="app__body_text-desc">Система анализирует поведение клиентов, предугадывает их предпочтения, повышая конверсию и средний чек.</p>
+                        </div>
+                    </div>
+                    <!-- APP 4 -->
+                    <div id="app_4" class="app__1_content app__inactive">
+                        <img src="image/app/app_4.png" alt="">
+                        <div class="app__body_text">
+                            <p class="app__body_text-title">Мобильная система управления заказами</p>
+                            <ul>
+                                <li>
+                                    <p class="app__body_text-desc">Обработка заказов с телефона</p>
+                                </li>
+                                <li>
+                                    <p class="app__body_text-desc">Персональные статусы заказов</p>
+                                </li>
+                                <li>
+                                    <p class="app__body_text-desc">Способы доставки</p>
+                                </li>
+                                <li>
+                                    <p class="app__body_text-desc">Способы оплаты</p>
+                                </li>
+                                <li>
+                                    <p class="app__body_text-desc">Сотрудники</p>
+                                </li>
+                                <li>
+                                    <p class="app__body_text-desc">REST API для интеграции с ERP</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- APP 5 -->
+                    <div id="app_5" class="app__1_content app__inactive">
+                        <img src="image/app/app_5.png" alt="">
+                        <div class="app__body_text">
+                            <p class="app__body_text-title">Система управления взаимоотношениями с клиентами</p>
+                            <ul>
+                                <li>
+                                    <p class="app__body_text-desc">Интеграция с Firebase</p>
+                                </li>
+                                <li>
+                                    <p class="app__body_text-desc">Аналитика</p>
+                                </li>
+                                <li>
+                                    <p class="app__body_text-desc">Контакты</p>
+                                </li>
+                                <li>
+                                    <p class="app__body_text-desc">Ремаргетинг</p>
+                                </li>
+                                <li>
+                                    <p class="app__body_text-desc">PUSH-уведомления</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- APP 6 -->
+                    <div id="app_6" class="app__1_content app__inactive">
+                        <img src="image/app/app_6.png" alt="">
+                        <div class="app__body_text">
+                            <p class="app__body_text-title">Локализация интерфейса и контента</p>
+                            <p class="app__body_text-desc">Для многоязычных страни глобальных рынков:</p>
+                            <ul>
+                                <li>
+                                    <p class="app__body_text-desc">системная поддержка перевода интерфейса для популярных языков</p>
+                                </li>
+                                <li>
+                                    <p class="app__body_text-desc">машинный перевод контента</p>
+                                </li>
+                                <li>
+                                    <p class="app__body_text-desc">ручная модерация машинного перевода контента</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- APP 7 -->
+                    <div id="app_7" class="app__1_content app__inactive">
+                        <img src="image/app/app_7.png" alt="">
+                        <div class="app__body_text">
+                            <p class="app__body_text-title">Интерфейс взаимодействия с Pimmer</p>
+                            <p class="app__body_text-desc">API публичный. Возможны любые интеграции:</p>
+                            <ul>
+                                <li>
+                                    <p class="app__body_text-desc">сайты, CMS и CRM</p>
+                                </li>
+                                <li>
+                                    <p class="app__body_text-desc">специализированное ПО</p>
+                                </li>
+                                <li>
+                                    <p class="app__body_text-desc">партнеры внутри Pimmer</p>
+                                </li>
+                                <li>
+                                    <p class="app__body_text-desc">приложения на базе Pimmer</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="app__reviews">
+                    <div class="app__reviews_title">
+                        <p>Отзывы</p>
+                        <div class="app_reviews_controls">
+                            <div class="app__control_left">
+                                <img src="image/arrow_b.svg" alt="">
+                            </div>
+                            <div class="app__control_right">
+                                <img src="image/arrow_b.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app__reviews_body" id="reviews">
+                        <!-- REVIEWS -->
+                        <div id="review_1" class="app__reviews_content">
+                            <div class="app__reviews_author">
+                                <div><img src="image/gold_reviews.svg" alt="">
+                                    <p class="app_reviews_name">Сергей Есенин</p>
+                                </div>
+
+                                <img class="reviews_platform" src="image/apple.svg" alt="">
+                            </div>
+                            <p class="app__reviews_text">
+                                Равным образом консультация с широким активом в значительной степени обуславливает создание позиций, занимаемых участниками в отношении поставленных задач.
+                            </p>
+                        </div>
+                        <div id="review_2" class="app__reviews_content">
+                            <div class="app__reviews_author">
+                                <div><img src="image/gold_reviews.svg" alt="">
+                                    <p class="app_reviews_name">Федор Достоевский</p>
+                                </div>
+                                <img class="reviews_platform" src="image/google.svg" alt="">
+                            </div>
+                            <p class="app__reviews_text">
+                                Равным образом консультация с широким активом в значительной степени обуславливает создание позиций.
+                            </p>
+                        </div>
+                        <div id="review_3" class="app__reviews_content">
+                            <div class="app__reviews_author">
+                                <div><img src="image/gold_reviews.svg" alt="">
+                                    <p class="app_reviews_name">Александр Пушкин</p>
+                                </div>
+                                <img class="reviews_platform" src="image/google.svg" alt="">
+                            </div>
+                            <p class="app__reviews_text">
+                                Равным образом консультация с широким активом в значительной степени обуславливает создание позиций, занимаемых участниками.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- TARIFF -->
+        <section class="tariff" id="tariff">
+            <div class="tariff__body">
+                <p class="tariff__body_title">Тарифы</p>
+                <div class="tariff__body_table">
+                    <div class="tariff__body_controls">
+                        <div class="tariff__body_left" id="tariff__body_left">
+                            <img src="image/arrow_white.svg" alt="">
+                        </div>
+                        <div class="tariff__body_right" id="tariff__body_right">
+                            <img src="image/arrow_white.svg" alt="">
+                        </div>
+                    </div>
+                    <!-- TARIFF DESKTOP -->
+                    <div class="tariff__body_cards cards_1">
+                        <div class="tariff__body_card">
+                            <div class="tariff__price">
+                                FREE
+                            </div>
+                            <div class="tariff__title">
+                                До 100 товаров в каталоге
+                            </div>
+                            <div class="tariff__desc">
+                                Подходит для тестирования новых магазинов. Удобный интерфейс нативного приложения для оформления заказа и управления заказами с телефона.
+                            </div>
+                            <div class="tariff_cost">
+                                <p class="tariff_cost_1">Всегда бесплатно</p>
+                                <p class="tariff_cost_2">0 ₽ <span>/ месяц</span></p>
+                            </div>
+                            <a href="#"><span class="line__blue_2">ПОДКЛЮЧИТЬ</span> <img src="image/arrow_black.svg" alt=""></a>
+                        </div>
+                        <div class="tariff__body_card">
+                            <div class="tariff__price">
+                                <p>VENTURE</p>
+                            </div>
+                            <div class="tariff__title">
+                                До 1 000 товаров в каталоге
+                            </div>
+                            <div class="tariff__desc">
+                                Подходит для большинства новых предприятий: магазины, кафе и организаторы мероприятий. Эквайринг, Apple Pay, Google Pay, Samsung Pay. API для интеграции.
+                            </div>
+                            <p class="tariff_cost_2 tariff_main_cost">955 ₽ <span>/ месяц</span></p>
+                            <div class="tariff_cost tariff__body_cost">
+                                <p class="tariff_cost_1">При оплате за год экономия 12%</p>
+                                <p class="tariff_cost_2">875 ₽ <span>/ месяц</span></p>
+                            </div>
+                            <a href="#"><span class="line__blue_2">ПОДКЛЮЧИТЬ</span> <img src="image/arrow_black.svg" alt=""></a>
+                        </div>
+                        <div class="tariff__body_card">
+                            <div class="tariff__price">
+                                <p>BUSINESS</p>
+                            </div>
+                            <div class="tariff__title">
+                                До 10 000 товаров в каталоге
+                            </div>
+                            <div class="tariff__desc">
+                                Подходит для зрелых компаний: интернет-магазины, супермаркеты и мелкооптовые компании. API для создания персонального приложения.
+                                <p> &nbsp;</p>
+                            </div>
+                            <p class="tariff_cost_2 tariff_main_cost">4950 ₽ <span>/ месяц</span></p>
+                            <div class="tariff_cost tariff__body_cost">
+                                <p class="tariff_cost_1">При оплате за год экономия 18%</p>
+                                <p class="tariff_cost_2">4050 ₽ <span>/ месяц</span></p>
+                            </div>
+                            <a href="#"><span class="line__blue_2">ПОДКЛЮЧИТЬ</span> <img src="image/arrow_black.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="tariff__body_cards cards_2">
+                        <div class="tariff__body_card">
+                            <div class="tariff__price">
+                                <p>ENTERPRISE</p>
+                            </div>
+                            <div class="tariff__title">
+                                Максимальные возможности без ограничений
+                            </div>
+                            <div class="tariff__desc">
+                                Подходит для производителей, дистрибьюторов и сетевых компаний. API для создания собственного приложения, объединяющего сеть компаний.
+                            </div>
+                            <div class="tariff_cost">
+                                <p class="tariff_cost_1">Минимальный срок — 1 год</p>
+                                <p class="tariff_cost_2">19 250 ₽ <span>/ месяц</span></p>
+                            </div>
+                            <a href="#"><span class="line__blue_2">ПОДКЛЮЧИТЬ</span> <img src="image/arrow_black.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <!-- MOBILE DESKTOP -->
+                    <div class="tariff__body_cards_mob">
+                        <div class="tariff__body_card cards_mob_1">
+                            <div class="tariff__price">
+                                FREE
+                            </div>
+                            <div class="tariff__title">
+                                До 100 товаров в каталоге
+                            </div>
+                            <div class="tariff__desc">
+                                Подходит для тестирования новых магазинов. Удобный интерфейс нативного приложения для оформления заказа и управления заказами с телефона.
+                            </div>
+                            <div class="tariff_cost">
+                                <p class="tariff_cost_1">Всегда бесплатно</p>
+                                <p class="tariff_cost_2">0 ₽ <span>/ месяц</span></p>
+                            </div>
+                            <a href="#"><span class="line__blue_2">ПОДКЛЮЧИТЬ</span> <img src="image/arrow_black.svg" alt=""></a>
+                        </div>
+                        <div class="tariff__body_card cards_mob_2">
+                            <div class="tariff__price">
+                                <p>VENTURE</p>
+                            </div>
+                            <div class="tariff__title">
+                                До 1 000 товаров в каталоге
+                            </div>
+                            <div class="tariff__desc">
+                                Подходит для большинства новых предприятий: магазины, кафе и организаторы мероприятий. Эквайринг, Apple Pay, Google Pay, Samsung Pay. API для интеграции.
+                            </div>
+                            <p class="tariff_cost_2 tariff_main_cost">955 ₽ <span>/ месяц</span></p>
+                            <div class="tariff_cost tariff__body_cost">
+                                <p class="tariff_cost_1">При оплате за год экономия 12%</p>
+                                <p class="tariff_cost_2">875 ₽ <span>/ месяц</span></p>
+                            </div>
+                            <a href="#"><span class="line__blue_2">ПОДКЛЮЧИТЬ</span> <img src="image/arrow_black.svg" alt=""></a>
+                        </div>
+                        <div class="tariff__body_card cards_mob_3">
+                            <div class="tariff__price">
+                                <p>BUSINESS</p>
+                            </div>
+                            <div class="tariff__title">
+                                До 10 000 товаров в каталоге
+                            </div>
+                            <div class="tariff__desc">
+                                Подходит для зрелых компаний: интернет-магазины, супермаркеты и мелкооптовые компании. API для создания персонального приложения.
+                                <p> &nbsp;</p>
+                            </div>
+                            <p class="tariff_cost_2 tariff_main_cost">4950 ₽ <span>/ месяц</span></p>
+                            <div class="tariff_cost tariff__body_cost">
+                                <p class="tariff_cost_1">При оплате за год экономия 18%</p>
+                                <p class="tariff_cost_2">4050 ₽ <span>/ месяц</span></p>
+                            </div>
+                            <a href="#"><span class="line__blue_2">ПОДКЛЮЧИТЬ</span> <img src="image/arrow_black.svg" alt=""></a>
+                        </div>
+                        <div class="tariff__body_card cards_mob_4">
+                            <div class="tariff__price">
+                                <p>ENTERPRISE</p>
+                            </div>
+                            <div class="tariff__title">
+                                Максимальные возможности без ограничений
+                            </div>
+                            <div class="tariff__desc">
+                                Подходит для производителей, дистрибьюторов и сетевых компаний. API для создания собственного приложения, объединяющего сеть компаний.
+                            </div>
+                            <div class="tariff_cost">
+                                <p class="tariff_cost_1">Минимальный срок — 1 год</p>
+                                <p class="tariff_cost_2">19 250 ₽ <span>/ месяц</span></p>
+                            </div>
+                            <a href="#"><span class="line__blue_2">ПОДКЛЮЧИТЬ</span> <img src="image/arrow_black.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="app__link">
+                    <p class="app_link_title">Приложение в App Store и Google Play</p>
+                    <div class="app_link_links">
+                        <a href="#"><img src="image/app_store.svg" alt=""></a>
+                        <a href="#"><img src="image/google_play.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FOOTER -->
+        <section class="footer">
+            <div class="footer__body">
+                <div class="footer__body_logotype">
+                    <a href="/"> <img class="footer_logotype" src="image/logotype_black.svg" alt=""></a>
+                    <p style="color: #B1AAB8;">© 2020</p>
+                </div>
+
+                <div class="footer_links">
+                    <p><a href="#"><span class="line__black_2">О нас</span></a></p>
+                    <p><a href="#tariff"><span class="line__black_2">Тарифы</span></a></p>
+                </div>
+                <div class="footer_links">
+                    <p><a href="#"><span class="line__black_2">Соглашение</span></a></p>
+                    <p><a href="privacy.html"><span class="line__black_2">Конфиденциальность</span></a></p>
+                </div>
+                <div class="footer_image">
+                    <a href="#"><img src="image/app_store.svg" alt=""></a>
+                    <a href="#"><img src="image/google_play.svg" alt=""></a>
+                </div>
+                <div class="footer_contacts">
+                    <p>Следите з нами</p>
+                    <div class="footer_contacts_img">
+                        <a href="#"> <img src="image/facebook.svg" alt=""></a>
+                        <a href="#"><img src="image/instagram.svg" alt=""></a>
+                        <a href="#"><img src="image/youtube.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+    </div>
+    <!-- COOKIE NOTIFICATION -->
+    <div class="cookie_notify">
+        <p>Мы используем “cookies”. <a href="#"> Что это значит? </a> </p>
+        <button id="cookie_ok">OK</button>
+    </div>
+</body>
+
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/js.cookie.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>

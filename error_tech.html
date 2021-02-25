@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pimmer - технические работы</title>
+    <link rel="shortcut icon" href="image/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- LOGIN -->
+        <section class="login">
+            <div class="header__body">
+                <!-- DESKTOP NAVBAR -->
+                <nav>
+                    <ul class="header__navbar">
+                        <li style="display: flex;">
+                            <a href="/"> <img src="image/logotype.svg" alt="logotype"></a>
+                            <div class="header__lang_choise">
+                                <img src="image/ru_lang.svg" alt="">
+                                <p class="header__lang_choise_text">RUS <img src="image/down.svg" alt=""></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header__navbar_links">
+                                <a href="#content">Почему Pimmer </a>
+                                <a href="#app">Возможности</a>
+                                <a href="#reviews">Отзывы</a>
+                                <a href="#tariff">Тарифы</a>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="main__button navbar__button">Войти</button>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- MOBILE NAVBAR -->
+                <nav class="navbar__mobile">
+                    <ul class="mobile__navbar">
+                        <li>
+                            <img class="mobile_hamburger_inactive mobile_menu_show" src="image/hamburger_inactive.svg" alt="">
+                        </li>
+                        <li>
+                            <img class="mobile_navbar_logo" src="image/logotype.svg" alt="logotype">
+                        </li>
+                        <li>
+                            <img class="mobile_navbar_avatar" src="image/avatar.png" alt="">
+                        </li>
+                    </ul>
+                    <div class="mobile__menu mb_inactive">
+                        <div class="mobile__menu_body">
+                            <ul>
+                                <li>
+                                    <div class="mobile__menu_header">
+                                        <img class="mobile_menu_hide" src="image/hamburger_active.svg" alt="">
+                                        <img class="mobile_menu_logotype" src="image/logotype.svg" alt="">
+                                        <a href="login.html"> <button class="main__button navbar__button">Войти</button></a>
+                                        <hr class="mobile__menu_header_hr">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="header__navbar_links mobile__navbar_link" style="display: grid;">
+                                        <span> <a href="#content">Почему Pimmer </a></span>
+                                        <span><a href="#app">Возможности</a></span>
+                                        <span><a href="#reviews">Отзывы</a></span>
+                                        <span><a href="#tariff">Тарифы</a></span>
+                                        <hr class="mobile__menu_header_hr_2">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="mobile__header_footer">
+                                        <div class="mobile__lang_choise">
+                                            <p class="mobile__lang_choise">Следите за нами:</p>
+                                        </div>
+                                        <div class="mobile__header_contacts">
+                                            <a href="#"> <img src="image/facebook_black.svg" alt=""></a>
+                                            <a href="#"><img src="image/instagram_black.svg" alt=""></a>
+                                            <a href="#"><img src="image/youtube_black.svg" alt=""></a>
+
+                                        </div>
+                                        <hr class="mobile__menu_header_hr_3">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="mobile__lang_choise_1">
+                                        <p class="mobile__lang_choise_title">Выберите язык:</p>
+                                        <div class="lang-list">
+                                            <button>English</button>
+                                            <button>Español</button>
+                                            <button>Français</button>
+                                            <button>Русский</button>
+                                            <button>Português</button>
+                                            <button>Bahasa Indonesia</button>
+                                        </div>
+                                        <hr class="mobile__menu_header_hr_4">
+                                    </div>
+                                </li>
+                                <div class="mobiile_loc_choised">
+                                    <img class="mobile_loc_country" src="image/russia_logo.svg" alt="">
+                                    <p>Россия</p>
+                                    <img class="mobile_loc_arrow" src="image/down_black.svg" alt="">
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="error__tech_content">
+                    <div class="error__tech_text">
+                        <img src="image/error_tech.svg" alt="">
+                        <p class="error__tech_title">Сервис временно недоступен</p>
+                    </div>
+                    <div class="error__tech_update">
+                        <p class="error__tech_update_title">Идут технические работы по улучшению. Попробуйте обновить страницу позже.</p>
+                        <button class="error__tech_update_button error_tech_button_tablet">ОБНОВИТЬ</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+    <!-- COOKIE NOTIFICATION -->
+    <div class="cookie_notify">
+        <p>Мы используем “cookies”. <a href="#"> Что это значит? </a> </p>
+        <button id="cookie_ok">OK</button>
+    </div>
+</body>
+
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/js.cookie.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>

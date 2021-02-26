@@ -8,6 +8,8 @@
     <title>pimmer - ваш магазин заморожен</title>
     <link rel="shortcut icon" href="image/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="preload" as="font" href="/style/fonts/Circe-Bold.woff" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/style/fonts/Circe-Regular.woff" crossorigin="anonymous">
 </head>
 
 <body>
@@ -121,12 +123,20 @@
             <div class="popup-fade">
                 <div class="popup">
                     <div class="error__hold_popup_text">
-                        <p>Укажите локацию и язык</p>
-                        <button id="popup-close">OK</button>
+                        <p>Выберите язык</p>
                     </div>
                     <div class="error__hold_popup_choise">
+                        <div class="error_hold_loc error_hold_lang_choise">
+                            <button class="error_hold_loc_button">English</button>
+                            <button class="error_hold_loc_button">Español</button>
+                            <button class="error_hold_loc_button">Français</button>
+                            <button class="error_hold_loc_button error_hold_loc_active">Русский</button>
+                            <button class="error_hold_loc_button">Português</button>
+                            <button class="error_hold_loc_button">Bahasa Indonesia</button>
+                        </div>
+                        <hr class="error_hold_hr">
                         <div class="error_hold_loc">
-                            <p class="error_hold_country">Страна</p>
+
                             <div id="error_hold_lang" class="error_hold_loc_choise">
                                 <div class="error_hold_lang">
                                     <div class="error_hold_loc_choised">
@@ -157,38 +167,6 @@
                                     </div>
                                 </div>
                                 <img id="error_loc_down" class="error_down_black error_down_black_default" src="image/down_black.svg" alt="">
-                            </div>
-                            <img class="error_line" src="image/error_Line.svg" alt="">
-                            <p class="error_rub">RUB</p>
-                            <p class="error_plus">+</p>
-                        </div>
-                        <div class="error_hold_loc error_hold_lang_choise">
-                            <p class="error_hold_country">Язык:</p>
-                            <div id="error_hold_loc_choise" class="error_hold_loc_choise">
-                                <div id="error_hold_language" class="error_hold_lang error_lang_choised">
-                                    <p>Русский</p>
-                                </div>
-                                <div class="error_hold_lang_list">
-                                    <div class="error_hold_lang_item">
-                                        <p>English</p>
-                                    </div>
-                                    <div class="error_hold_lang_item">
-                                        <p>Español</p>
-                                    </div>
-                                    <div class="error_hold_lang_item">
-                                        <p>Français</p>
-                                    </div>
-                                    <div class="error_hold_lang_item">
-                                        <p>Português</p>
-                                    </div>
-                                    <div class="error_hold_lang_item">
-                                        <p>Русский</p>
-                                    </div>
-                                    <div class="error_hold_lang_item">
-                                        <p>Bahasa Indonesia</p>
-                                    </div>
-                                </div>
-                                <img id="error_down_left" class="error_down_black error_down_left error_down_black_default" src="image/down_black.svg" alt="">
                             </div>
                         </div>
                     </div>
